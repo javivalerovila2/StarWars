@@ -8,15 +8,19 @@ class Player extends Character {
      * @param game {Game} La instancia del juego al que pertenece el jugador
      */
     constructor (game) {
+
         const height = PLAYER_HEIGHT * game.width / 100,
             width = PLAYER_WIDTH * game.width / 100,
             x = game.width / 2 - width / 2,
             y = game.height - height,
             speed = PLAYER_SPEED,
             myImage = PLAYER_PICTURE,
-            myImageDead = PLAYER_PICTURE_DEAD;
+            myImageDead = PLAYER_PICTURE_DEAD,
+            lives = VIDAS_INICIAL;
+
 
         super(game, width, height, x, y, speed, myImage, myImageDead);
+        this.lives = lives;
     }
 
     /**
@@ -46,6 +50,7 @@ class Player extends Character {
      * Mata al jugador
      */
     collide() {
+        this.lives -=1
         if (!this.dead) {
             setTimeout(() => {
                 this.game.endGame();
