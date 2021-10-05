@@ -7,10 +7,16 @@ html {
 	-webkit-animation: rotation 3s infinite linear;
 }
 
+.Shot {
+	animation: rotation 0.5s infinite linear;
+	-webkit-animation: rotation 0.5s infinite linear;
+}
+
 .paused .Opponent {
 	animation: none;
 	-webkit-animation: none;
 }
+
 
 @-webkit-keyframes rotation {
 	from {

@@ -1,6 +1,6 @@
 const OPPONENT_HEIGHT = 5,
     OPPONENT_PICTURE = "assets/malo.png",
-    OPPONENT_PICTURE_DEAD = "assets/malo_muerto.png",
+    OPPONENT_PICTURE_DEAD = "assets/malomuerto.png",
     OPPONENT_SPEED = 5,
     OPPONENT_WIDTH = 5,
     GAME_OVER_PICTURE = "assets/game_over.png",
@@ -10,7 +10,7 @@ const OPPONENT_HEIGHT = 5,
     MIN_TOUCHMOVE = 20,
     PLAYER_HEIGHT = 5,
     PLAYER_PICTURE = "assets/bueno.png",
-    PLAYER_PICTURE_DEAD = "assets/bueno_muerto.png",
+    PLAYER_PICTURE_DEAD = "assets/buenomuerto.png",
     PLAYER_SPEED = 20,
     PLAYER_WIDTH = 5,
     SHOT_HEIGHT = 1.5,
@@ -18,7 +18,8 @@ const OPPONENT_HEIGHT = 5,
     SHOT_PICTURE_PLAYER = "assets/shot1.png",
     SHOT_PICTURE_OPPONENT = "assets/shot2.png",
     SHOT_WIDTH = 1.5,
-    VIDAS_INICIAL = 3 ;
+    VIDAS_INICIAL = 3 ,
+    BOSS_SPEED = OPPONENT_SPEED*2;
 
 function getRandomNumber (range) {
     return Math.floor(Math.random() * range);
