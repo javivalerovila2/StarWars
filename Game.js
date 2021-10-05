@@ -214,6 +214,7 @@ class Game {
         if (this.player.lives != 0) {
             let gameWin = new Entity(this, this.width / 2, "auto", this.width / 4, this.height / 4, 0, GAME_WIN_PICTURE)
             gameWin.render();
+            this.ended = true;
 
         }
         else {

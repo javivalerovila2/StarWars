@@ -20,7 +20,7 @@ const OPPONENT_HEIGHT = 5,
     SHOT_PICTURE_OPPONENT = "assets/shot2.png",
     SHOT_WIDTH = 1.5,
     VIDAS_INICIAL = 3 ,
-    BOSS_SPEED = OPPONENT_SPEED*2,
+    BOSS_SPEED = OPPONENT_SPEED,
     BOSS_PICTURE = "assets/jefe.png",
     BOSS_PICTURE_DEAD = "assets/jefemuerto.png";
 

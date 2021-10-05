@@ -16,7 +16,6 @@ class Opponent extends Character {
 
         super(game, width, height, x, y, speed, myImage, myImageDead);
         this.direction = "R"; // Dirección hacia la que se mueve el oponente
-        this.boss = false
         setTimeout(() => this.shoot(), 1000 + getRandomNumber(2500));
     }
 
