@@ -6,16 +6,15 @@
      * @param game {Game} La instancia del juego al que pertenece el oponente
      */
     constructor (game) {
-        const speed = BOSS_SPEED*2,
+        const speed = BOSS_SPEED*1.5,
         myImageDead = BOSS_PICTURE_DEAD,
         myImage = BOSS_PICTURE;
-
 
         super(game);
         this.speed = speed;
         this.image.src = myImage;
         this.myImageDead = myImageDead;
-        setTimeout(() => this.shoot(), 100 + getRandomNumber(2500));
+        setTimeout(() => this.shoot(), 10 + getRandomNumber(2500));
     }
 
  collide() {
