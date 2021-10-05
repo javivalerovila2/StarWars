@@ -17,8 +17,8 @@ const OPPONENT_HEIGHT = 5,
     SHOT_SPEED = 20,
     SHOT_PICTURE_PLAYER = "assets/shot1.png",
     SHOT_PICTURE_OPPONENT = "assets/shot2.png",
-    SHOT_WIDTH = 1.5;
-    VIDAS_INICIAL = 3 
+    SHOT_WIDTH = 1.5,
+    VIDAS_INICIAL = 3 ;
 
 function getRandomNumber (range) {
     return Math.floor(Math.random() * range);

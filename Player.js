@@ -46,16 +46,31 @@ class Player extends Character {
         }
     }
 
+
+
+
+
+
     /**
      * Mata al jugador
      */
-    collide() {
-        this.lives -=1
+     collide() {
+
         if (!this.dead) {
-            setTimeout(() => {
-                this.game.endGame();
-            }, 2000);
+            this.lives -= 1;
             super.collide();
+            setTimeout(() => {
+                this.dead = false;
+                this.image.src = this.myImage
+            }, 2000);
+            if (this.lives == 0) {
+                this.game.endGame()
+            }
+
+
+
+
+
         }
     }
 }
